@@ -32,15 +32,15 @@ public:
     }
 };
 
-int main()
-{
-    // std::string str1 = "ABABAB";
-    // std::string str2 = "ABAB";
-    std::string str1 = "LEET";
-    std::string str2 = "CODE";
-    Solution    solution;
+// int main()
+// {
+//     // std::string str1 = "ABABAB";
+//     // std::string str2 = "ABAB";
+//     std::string str1 = "LEET";
+//     std::string str2 = "CODE";
+//     Solution    solution;
 
-    std::cout << solution.gcdOfStrings(str1, str2) << std::endl;
+//     std::cout << solution.gcdOfStrings(str1, str2) << std::endl;
 
-    return 0;
-}
+//     return 0;
+// }
