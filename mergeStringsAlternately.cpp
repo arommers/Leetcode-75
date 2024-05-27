@@ -6,8 +6,9 @@ public:
     std::string mergeAlternately(std::string word1, std::string word2)
     {
        std::string result;
+       size_t   len = std::max(word1.length(), word2.length());
        
-       for (int i = 0; i < std::max(word1.length(), word2.length()); ++i)
+       for (int i = 0; i < len; ++i)
         {
             if( i < word1.length())
                 result += word1[i];
