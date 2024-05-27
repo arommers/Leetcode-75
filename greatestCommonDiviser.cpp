@@ -18,10 +18,14 @@ public:
         int len2 = str2.length();
         int len = greatestCommonDivisor(len1, len2);
         std::string divisor = str1.substr(0, len);
+        int divlen = divisor.length();
+
+        if (str1 + str2 != str2 + str1)
+            return "";
 
         if (str1.find(divisor) != std::string::npos && str2.find(divisor) != std::string::npos)
         {
-            if (len1 % divisor.length() == 0 && len2 % divisor.length() == 0)
+            if (len1 % divlen == 0 && len2 % divlen == 0)
                 return divisor;
         }
         return "";
